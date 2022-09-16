@@ -11,7 +11,7 @@ const ExpenseItem = (props) => {
         <div className="expense-item__price">${props.amount}</div>
       </div>
     </Card>
-  )
-}
+  );
+};
 
-export default ExpenseItem; 
+export default ExpenseItem;
