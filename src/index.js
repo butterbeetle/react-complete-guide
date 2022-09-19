@@ -1,16 +1,25 @@
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App01 from "./App01";
-import App02 from "./App02";
-import App03 from "./App03";
-import App04 from "./App04";
+import AppSection03 from "./section03/App";
+import AppSection06 from "./section06/App";
+import AppSection07 from "./section07/App";
+import AppSection08 from "./section08/App";
+import AppSection10 from "./section10/App";
+import "./section10/index.css";
 
+/**
+ * App :  section 03
+ * App :  section 06
+ * App :  section 07
+ * App :  section 08
+ * App :  section 06
+ */
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div>
-    {/* <App01 /> */}
-    {/* <App02 /> */}
-    {/* <App03 /> */}
-    <App04 />
+    {/* <AppSection03 /> */}
+    {/* <AppSection06 /> */}
+    {/* <AppSection07 /> */}
+    {/* <AppSection08 /> */}
+    <AppSection10 />
   </div>
 );
