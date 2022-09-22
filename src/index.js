@@ -5,6 +5,7 @@ import AppSection07 from "./section07/App";
 import AppSection08 from "./section08/App";
 import AppSection10 from "./section10/App";
 import "./section10/index.css";
+import { AuthContextProvider } from "./section10/store/auth-context";
 
 /**
  * App :  section 03
@@ -20,6 +21,8 @@ root.render(
     {/* <AppSection06 /> */}
     {/* <AppSection07 /> */}
     {/* <AppSection08 /> */}
-    <AppSection10 />
+    <AuthContextProvider>
+      <AppSection10 />
+    </AuthContextProvider>
   </div>
 );
