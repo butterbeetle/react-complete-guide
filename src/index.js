@@ -1,19 +1,25 @@
 import ReactDOM from "react-dom/client";
-import AppSection03 from "./section03/App";
-import AppSection06 from "./section06/App";
-import AppSection07 from "./section07/App";
-import AppSection08 from "./section08/App";
-import AppSection10 from "./section10/App";
-import "./section10/index.css";
-import { AuthContextProvider } from "./section10/store/auth-context";
+//Section 03
+// import AppSection03 from "./section03/App";
 
-/**
- * App :  section 03
- * App :  section 06
- * App :  section 07
- * App :  section 08
- * App :  section 06
- */
+// //Section 06
+// import AppSection06 from "./section06/App";
+
+// //Section 07
+// import AppSection07 from "./section07/App";
+
+// //Section 08
+// import AppSection08 from "./section08/App";
+
+// //Section 10
+// import AppSection10 from "./section10/App";
+// import { AuthContextProvider } from "./section10/store/auth-context";
+// import "./section10/index.css";
+
+//Section 11
+import AppSection11 from "./section11/App";
+import "./section11/index.css";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div>
@@ -21,8 +27,9 @@ root.render(
     {/* <AppSection06 /> */}
     {/* <AppSection07 /> */}
     {/* <AppSection08 /> */}
-    <AuthContextProvider>
+    {/* <AuthContextProvider>
       <AppSection10 />
-    </AuthContextProvider>
+    </AuthContextProvider> */}
+    <AppSection11 />
   </div>
 );
