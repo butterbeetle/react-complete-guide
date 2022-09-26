@@ -17,8 +17,12 @@ import ReactDOM from "react-dom/client";
 // import "./section10/index.css";
 
 //Section 11
-import AppSection11 from "./section11/App";
-import "./section11/index.css";
+// import AppSection11 from "./section11/App";
+// import "./section11/index.css";
+
+//Section 12
+import AppSection12 from "./section12/App";
+import "./section12/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -30,6 +34,7 @@ root.render(
     {/* <AuthContextProvider>
       <AppSection10 />
     </AuthContextProvider> */}
-    <AppSection11 />
+    {/* <AppSection11 /> */}
+    <AppSection12 />
   </div>
 );
