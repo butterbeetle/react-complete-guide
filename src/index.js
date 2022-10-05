@@ -37,8 +37,12 @@ import ReactDOM from "react-dom/client";
 // import "./section15_1/index.css";
 
 //Section 15_1
-import AppSection15Two from "./section15_2/App";
-import "./section15_2/index.css";
+// import AppSection15Two from "./section15_2/App";
+// import "./section15_2/index.css";
+
+//Section 16
+import AppSection16 from "./section16/App";
+import "./section16/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -55,6 +59,7 @@ root.render(
     {/* <AppSection13 /> */}
     {/* <AppSection14 /> */}
     {/* <AppSection15One /> */}
-    <AppSection15Two />
+    {/* <AppSection15Two /> */}
+    <AppSection16 />
   </div>
 );
