@@ -42,8 +42,6 @@ const AvailableMeals = () => {
     });
   }, []);
 
-  console.log(meals);
-
   if (isLoading) {
     return (
       <section className={classes.MealsLoading}>
