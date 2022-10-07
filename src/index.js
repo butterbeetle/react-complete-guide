@@ -16,9 +16,9 @@ import ReactDOM from "react-dom/client";
 // import { AuthContextProvider } from "./section10/store/auth-context";
 // import "./section10/index.css";
 
-//Section 11
-// import AppSection11 from "./section11/App";
-// import "./section11/index.css";
+//Section 11 & 17
+import AppSection11 from "./section11/App";
+import "./section11/index.css";
 
 //Section 12
 // import AppSection12 from "./section12/App";
@@ -41,8 +41,8 @@ import ReactDOM from "react-dom/client";
 // import "./section15_2/index.css";
 
 //Section 16
-import AppSection16 from "./section16/App";
-import "./section16/index.css";
+// import AppSection16 from "./section16/App";
+// import "./section16/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -54,12 +54,12 @@ root.render(
     {/* <AuthContextProvider>
       <AppSection10 />
     </AuthContextProvider> */}
-    {/* <AppSection11 /> */}
+    <AppSection11 />
     {/* <AppSection12 /> */}
     {/* <AppSection13 /> */}
     {/* <AppSection14 /> */}
     {/* <AppSection15One /> */}
     {/* <AppSection15Two /> */}
-    <AppSection16 />
+    {/* <AppSection16 /> */}
   </div>
 );
