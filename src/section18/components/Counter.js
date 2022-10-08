@@ -5,9 +5,9 @@ import classes from "./Counter.module.css";
 // 컴포넌트 기반
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.counter);
+  const counter = useSelector((state) => state.counter.counter);
 
-  const showCotuner = useSelector((state) => state.showCounter);
+  const showCotuner = useSelector((state) => state.counter.showCounter);
 
   const incrementHandler = () => {
     dispatch(counterActions.increment());
