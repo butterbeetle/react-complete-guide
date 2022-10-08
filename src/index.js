@@ -45,6 +45,8 @@ import ReactDOM from "react-dom/client";
 // import "./section16/index.css";
 
 //Section 18
+import { Provider } from "react-redux";
+import store from "./section18/store";
 import AppSection18 from "./section18/App";
 import "./section18/index.css";
 
@@ -65,6 +67,8 @@ root.render(
     {/* <AppSection15One /> */}
     {/* <AppSection15Two /> */}
     {/* <AppSection16 /> */}
-    <AppSection18 />
+    <Provider store={store}>
+      <AppSection18 />
+    </Provider>
   </div>
 );
