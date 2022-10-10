@@ -45,10 +45,14 @@ import ReactDOM from "react-dom/client";
 // import "./section16/index.css";
 
 //Section 18
-import { Provider } from "react-redux";
-import store from "./section18/store";
-import AppSection18 from "./section18/App";
-import "./section18/index.css";
+// import { Provider } from "react-redux";
+// import store from "./section18/store";
+// import AppSection18 from "./section18/App";
+// import "./section18/index.css";
+
+//Section 19
+import AppSection19 from "./section19/App";
+import "./section19/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -67,8 +71,9 @@ root.render(
     {/* <AppSection15One /> */}
     {/* <AppSection15Two /> */}
     {/* <AppSection16 /> */}
-    <Provider store={store}>
+    {/* <Provider store={store}>
       <AppSection18 />
-    </Provider>
+    </Provider> */}
+    <AppSection19 />
   </div>
 );
