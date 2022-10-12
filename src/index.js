@@ -58,6 +58,7 @@ import ReactDOM from "react-dom/client";
 // import "./section19/index.css";
 
 //Section 20
+import { BrowserRouter } from "react-router-dom";
 import AppSection20 from "./section20/App";
 import "./section20/index.css";
 
@@ -84,6 +85,8 @@ root.render(
     {/* <Provider store={store}>
       <AppSection19 />
     </Provider> */}
-    <AppSection20 />
+    <BrowserRouter>
+      <AppSection20 />
+    </BrowserRouter>
   </div>
 );
