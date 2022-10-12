@@ -13,8 +13,8 @@ import ReactDOM from "react-dom/client";
 // import AppSection08 from "./section08/App";
 
 // //Section 10
-// import AppSection10 from "./section10/App";
 // import { AuthContextProvider } from "./section10/store/auth-context";
+// import AppSection10 from "./section10/App";
 // import "./section10/index.css";
 
 //Section 11 & 17
