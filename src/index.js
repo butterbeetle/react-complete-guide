@@ -57,10 +57,15 @@ import ReactDOM from "react-dom/client";
 // import AppSection19 from "./section19/App";
 // import "./section19/index.css";
 
-//Section 20
-import { BrowserRouter } from "react-router-dom";
-import AppSection20 from "./section20/App";
-import "./section20/index.css";
+//Section 20 React version 5
+// import { BrowserRouter } from "react-router-dom";
+// import AppSection20 from "./section20/App";
+// import "./section20/index.css";
+
+//Section 20 React version 6
+// import { BrowserRouter } from "react-router-dom";
+import AppSection20v6 from "./section20v6/App";
+import "./section20v6/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -85,8 +90,9 @@ root.render(
     {/* <Provider store={store}>
       <AppSection19 />
     </Provider> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <AppSection20 />
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <AppSection20v6 />
   </div>
 );
