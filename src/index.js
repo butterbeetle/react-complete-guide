@@ -63,7 +63,7 @@ import ReactDOM from "react-dom/client";
 // import "./section20/index.css";
 
 //Section 20 React version 6
-// import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import AppSection20v6 from "./section20v6/App";
 import "./section20v6/index.css";
 
@@ -93,6 +93,8 @@ root.render(
     {/* <BrowserRouter>
       <AppSection20 />
     </BrowserRouter> */}
-    <AppSection20v6 />
+    <BrowserRouter>
+      <AppSection20v6 />
+    </BrowserRouter>
   </div>
 );
