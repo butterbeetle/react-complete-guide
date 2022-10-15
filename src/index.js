@@ -63,9 +63,13 @@ import ReactDOM from "react-dom/client";
 // import "./section20/index.css";
 
 //Section 20 React version 6
-import { BrowserRouter } from "react-router-dom";
-import AppSection20v6 from "./section20v6/App";
-import "./section20v6/index.css";
+// import { BrowserRouter } from "react-router-dom";
+// import AppSection20v6 from "./section20v6/App";
+// import "./section20v6/index.css";
+
+//Section 22
+import AppSection22 from "./section22/App";
+import "./section22/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -93,8 +97,9 @@ root.render(
     {/* <BrowserRouter>
       <AppSection20 />
     </BrowserRouter> */}
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <AppSection20v6 />
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <AppSection22 />
   </div>
 );
