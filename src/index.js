@@ -71,6 +71,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import AppSection22 from "./section22/App";
 import "./section22/index.css";
+import { AuthContextProvider } from "./section22/store/auth-context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -101,8 +102,10 @@ root.render(
     {/* <BrowserRouter>
       <AppSection20v6 />
     </BrowserRouter> */}
-    <BrowserRouter>
-      <AppSection22 />
-    </BrowserRouter>
+    <AuthContextProvider>
+      <BrowserRouter>
+        <AppSection22 />
+      </BrowserRouter>
+    </AuthContextProvider>
   </div>
 );
