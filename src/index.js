@@ -68,10 +68,14 @@ import ReactDOM from "react-dom/client";
 // import "./section20v6/index.css";
 
 //Section 22
-import { BrowserRouter } from "react-router-dom";
-import AppSection22 from "./section22/App";
-import "./section22/index.css";
-import { AuthContextProvider } from "./section22/store/auth-context";
+// import { BrowserRouter } from "react-router-dom";
+// import { AuthContextProvider } from "./section22/store/auth-context";
+// import AppSection22 from "./section22/App";
+// import "./section22/index.css";
+
+//Section 24
+import AppSection24 from "./section24/App";
+import "./section24/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -102,10 +106,11 @@ root.render(
     {/* <BrowserRouter>
       <AppSection20v6 />
     </BrowserRouter> */}
-    <AuthContextProvider>
+    {/* <AuthContextProvider>
       <BrowserRouter>
         <AppSection22 />
       </BrowserRouter>
-    </AuthContextProvider>
+    </AuthContextProvider> */}
+    <AppSection24 />
   </div>
 );
