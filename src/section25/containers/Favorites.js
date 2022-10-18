@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { useSelector } from "react-redux";
+// import React, { useContext } from "react";
+// import { useSelector } from "react-redux";
 
 import FavoriteItem from "../components/Favorites/FavoriteItem";
-import { ProductsContext } from "../context/products-context";
+// import { ProductsContext } from "../context/products-context";
 import { useStore } from "../hooks-store/store";
 import "./Products.css";
 
