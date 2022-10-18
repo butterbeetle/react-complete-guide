@@ -74,8 +74,20 @@ import ReactDOM from "react-dom/client";
 // import "./section22/index.css";
 
 //Section 24
-import AppSection24 from "./section24/App";
-import "./section24/index.css";
+// import AppSection24 from "./section24/App";
+// import "./section24/index.css";
+
+//Section 25
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import { combineReducers, createStore } from "@reduxjs/toolkit";
+import AppSection25 from "./section25/App";
+import productReducer from "./section25/store/reducers/products";
+import "./section25/index.css";
+const rootReducer = combineReducers({
+  shop: productReducer,
+});
+const store = createStore(rootReducer);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -84,9 +96,11 @@ root.render(
     {/* <AppSection06 /> */}
     {/* <AppSection07 /> */}
     {/* <AppSection08 /> */}
+
     {/* <AuthContextProvider>
       <AppSection10 />
     </AuthContextProvider> */}
+
     {/* <AppSection11 /> */}
     {/* <AppSection12 /> */}
     {/* <AppSection13 /> */}
@@ -94,23 +108,35 @@ root.render(
     {/* <AppSection15One /> */}
     {/* <AppSection15Two /> */}
     {/* <AppSection16 /> */}
+
     {/* <Provider store={store}>
       <AppSection18 />
     </Provider> */}
+
     {/* <Provider store={store}>
       <AppSection19 />
     </Provider> */}
+
     {/* <BrowserRouter>
       <AppSection20 />
     </BrowserRouter> */}
+
     {/* <BrowserRouter>
       <AppSection20v6 />
     </BrowserRouter> */}
+
     {/* <AuthContextProvider>
       <BrowserRouter>
         <AppSection22 />
       </BrowserRouter>
     </AuthContextProvider> */}
-    <AppSection24 />
+
+    {/* <AppSection24 /> */}
+
+    <Provider store={store}>
+      <BrowserRouter>
+        <AppSection25 />
+      </BrowserRouter>
+    </Provider>
   </div>
 );
