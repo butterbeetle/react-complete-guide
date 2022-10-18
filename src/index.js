@@ -78,16 +78,17 @@ import ReactDOM from "react-dom/client";
 // import "./section24/index.css";
 
 //Section 25
-import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
-import { combineReducers, createStore } from "@reduxjs/toolkit";
 import AppSection25 from "./section25/App";
-import productReducer from "./section25/store/reducers/products";
+import ProductsContext from "./section25/context/products-context";
 import "./section25/index.css";
-const rootReducer = combineReducers({
-  shop: productReducer,
-});
-const store = createStore(rootReducer);
+// import productReducer from "./section25/store/reducers/products";
+// import { Provider } from "react-redux";
+// import { combineReducers, createStore } from "@reduxjs/toolkit";
+// const rootReducer = combineReducers({
+//   shop: productReducer,
+// });
+// const store = createStore(rootReducer);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -133,10 +134,10 @@ root.render(
 
     {/* <AppSection24 /> */}
 
-    <Provider store={store}>
+    <ProductsContext>
       <BrowserRouter>
         <AppSection25 />
       </BrowserRouter>
-    </Provider>
+    </ProductsContext>
   </div>
 );
