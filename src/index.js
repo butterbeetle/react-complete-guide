@@ -80,8 +80,10 @@ import ReactDOM from "react-dom/client";
 //Section 25
 import { BrowserRouter } from "react-router-dom";
 import AppSection25 from "./section25/App";
-import ProductsContext from "./section25/context/products-context";
 import "./section25/index.css";
+// import ProductsContext from "./section25/context/products-context";
+import configureProductsStore from "./section25/hooks-store/products-store";
+configureProductsStore();
 // import productReducer from "./section25/store/reducers/products";
 // import { Provider } from "react-redux";
 // import { combineReducers, createStore } from "@reduxjs/toolkit";
@@ -134,10 +136,13 @@ root.render(
 
     {/* <AppSection24 /> */}
 
-    <ProductsContext>
+    {/* <ProductsContext>
       <BrowserRouter>
         <AppSection25 />
       </BrowserRouter>
-    </ProductsContext>
+    </ProductsContext> */}
+    <BrowserRouter>
+      <AppSection25 />
+    </BrowserRouter>
   </div>
 );
