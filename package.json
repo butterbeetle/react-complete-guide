@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
-    "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
     "react": "^18.0.0",
@@ -41,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
     "prettier": "2.7.1",
     "react-error-overlay": "^6.0.9"
   }
