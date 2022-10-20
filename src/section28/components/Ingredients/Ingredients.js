@@ -33,12 +33,28 @@ const Ingredients = () => {
       });
   };
 
+  const removeIgredientHandler = (ingredientId) => {
+    fetch(
+      `https://react-http-cc93a-default-rtdb.firebaseio.com/ingredients/${ingredientId}.json`,
+      {
+        method: "DELETE",
+      }
+    ).then((response) => {
+      setUserIngredients((prevIngredients) =>
+        prevIngredients.filter((ingredient) => ingredient.id !== ingredientId)
+      );
+    });
+  };
+
   return (
     <div className="App">
       <IngredientForm onAddIngredient={addIngredientHandler} />
       <section>
         <Search onLoadIngredients={filteredIngerientsHandler} />
-        <IngredientList ingredients={userIngredients} onRemoveItem={() => {}} />
+        <IngredientList
+          ingredients={userIngredients}
+          onRemoveItem={removeIgredientHandler}
+        />
       </section>
     </div>
   );
