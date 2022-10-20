@@ -25,11 +25,11 @@ const Search = React.memo((props) => {
         for (const key in responseData) {
           loadedData.push({
             id: key,
-            title: responseData.title,
-            amount: responseData.amount,
+            title: responseData[key].title,
+            amount: responseData[key].amount,
           });
         }
-        // onLoadIngredients(loadedData);
+        onLoadIngredients(loadedData);
       });
   }, [enteredFilter, onLoadIngredients]);
 
