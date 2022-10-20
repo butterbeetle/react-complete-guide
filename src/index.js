@@ -93,8 +93,12 @@ import ReactDOM from "react-dom/client";
 // // const store = createStore(rootReducer);
 
 //Section 26
-import AppSection26 from "./section26/App";
-import "./section26/index.css";
+// import AppSection26 from "./section26/App";
+// import "./section26/index.css";
+
+//Section 28
+import AppSection28 from "./section28/App";
+import "./section28/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -148,6 +152,7 @@ root.render(
     {/* <BrowserRouter>
       <AppSection25 />
     </BrowserRouter> */}
-    <AppSection26 />
+    {/* <AppSection26 /> */}
+    <AppSection28 />
   </div>
 );
