@@ -98,6 +98,7 @@ import ReactDOM from "react-dom/client";
 
 //Section 28
 import AppSection28 from "./section28/App";
+import AuthContextProvider from "./section28/context/auth-context";
 import "./section28/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -153,6 +154,8 @@ root.render(
       <AppSection25 />
     </BrowserRouter> */}
     {/* <AppSection26 /> */}
-    <AppSection28 />
+    <AuthContextProvider>
+      <AppSection28 />
+    </AuthContextProvider>
   </div>
 );
