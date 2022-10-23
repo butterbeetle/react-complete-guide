@@ -97,9 +97,13 @@ import ReactDOM from "react-dom/client";
 // import "./section26/index.css";
 
 //Section 28
-import AppSection28 from "./section28/App";
-import AuthContextProvider from "./section28/context/auth-context";
-import "./section28/index.css";
+// import AppSection28 from "./section28/App";
+// import AuthContextProvider from "./section28/context/auth-context";
+// import "./section28/index.css";
+
+//Section 29
+import AppSection29 from "./section29/App";
+import "./section29/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -154,8 +158,9 @@ root.render(
       <AppSection25 />
     </BrowserRouter> */}
     {/* <AppSection26 /> */}
-    <AuthContextProvider>
+    {/* <AuthContextProvider>
       <AppSection28 />
-    </AuthContextProvider>
+    </AuthContextProvider> */}
+    <AppSection29 />
   </div>
 );
